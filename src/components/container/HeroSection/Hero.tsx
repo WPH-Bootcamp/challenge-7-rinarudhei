@@ -1,9 +1,13 @@
 import React from "react";
+import Button from "../../ui/Button";
 
 const Hero: React.FC = () => {
   return (
     <>
-      <div className="absolute flex flex-col w-[361px]  xl:w-[653px] gap-10 left-4  xl:left-[140px] top-[125px]  xl:top-[230px] z-10 ">
+      <div
+        id="hero"
+        className="absolute flex flex-col w-[361px]  xl:w-[653px] gap-10 left-4  xl:left-[140px] top-[125px]  xl:top-[230px] z-10 "
+      >
         <header className="flex flex-col gap-2">
           <h1 className="font-bold text-4xl  xl:text-[56px] leading-[44px]  xl:leading-[68px] tracking-tight text-[#0a0d12] dark:text-[#fdfdfd] h-[88px]  xl:h-[136px]">
             Your Tech Partner for
@@ -14,14 +18,14 @@ const Hero: React.FC = () => {
             confidence.
           </p>
         </header>
-        <button
-          className="bt-primary  md:w-[200px] md:h-12"
+        <Button
+          className="md:w-[200px] md:h-12"
           aria-label="Let's Talk - Main CTA on hero section"
         >
           <div className="font-bold text-sm leading-7 text-white h-7 md:h-[30px]  md:leading-[30px]">
             Let's Talk
           </div>
-        </button>
+        </Button>
       </div>
 
       <div className="hidden absolute xl:inline dark:hidden top-0 right-0">
@@ -31,7 +35,7 @@ const Hero: React.FC = () => {
           alt="light hero image"
         />
       </div>
-      <div className="absolute inline xl:hidden dark:hidden top-[408px]  md:top-0 md:right-0 right-[1px]">
+      <div className="absolute inline xl:hidden dark:hidden top-[408px]  md:top-[24px] md:right-0 right-[1px]">
         <img
           className="w-[391px] h-[391px]"
           src="/hero-light.svg"
@@ -45,7 +49,7 @@ const Hero: React.FC = () => {
           alt="dark hero image"
         />
       </div>
-      <div className="hidden absolute dark:inline xl:dark:hidden top-[408px] md:top-0 md:right-0 right-[1px]">
+      <div className="hidden absolute dark:inline xl:dark:hidden top-[408px] md:top-[24px] md:right-0 right-[1px]">
         <img
           className="w-[391px]  h-[391px] "
           src="/hero-dark.svg"

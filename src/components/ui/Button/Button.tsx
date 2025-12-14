@@ -1,7 +1,21 @@
+// Button.tsx
 import React from "react";
 
-const Button = () => {
-  return <>fix this button</>;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const Button: React.FC<ButtonProps> = ({
+  children,
+  className = "",
+  ...props
+}) => {
+  return (
+    <button type="button" className={`bt-primary ${className}`} {...props}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
