@@ -59,7 +59,6 @@ const Nav: React.FC = () => {
         className="md:hidden"
         onClick={toggleMenu}
         isOpen={isOpen}
-        aria-label="Toggle show menus"
       ></MenuButton>
       {isOpen && (
         <div
@@ -68,7 +67,11 @@ const Nav: React.FC = () => {
         >
           <ul className="w-[361px] md:hidden flex flex-col gap-3 font-semibold text-sm leading-[14px] text-[#0a0d12] dark:text-[#fdfdfd]">
             {navItems.map((item) => (
-              <li className="h-9 flex flex-col justify-center">{item.label}</li>
+              <li key={item.id} className="h-9 flex flex-col justify-center">
+                <a onClick={toggleMenu} href={item.href}>
+                  {item.label === "Projects" ? "Portfolio" : item.label}
+                </a>
+              </li>
             ))}
             <Button
               className=" rounded-full gap-1 items-center h-11"
