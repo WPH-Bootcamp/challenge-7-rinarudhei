@@ -17,7 +17,7 @@ const Nav: React.FC = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="sticky top-0 flex items-center justify-between h-16 xl:h-[84px] px-4 py-6 xl:px-[140px] bg-transparent backdrop-blur-sm z-49 border">
+    <header className="sticky top-0 flex items-center justify-between h-16 xl:h-[84px] px-4 py-6 xl:px-[140px] bg-transparent backdrop-blur-sm z-49">
       <div className="flex items-center w-[141px] gap-[8.53px] xl:w-[158.63px] xl:gap-[9.6px]">
         <img
           className="w-[26.3px] h-[28.85px] xl:w-[29.59px] xl:h-[32.46px]"
