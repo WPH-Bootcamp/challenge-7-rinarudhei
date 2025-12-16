@@ -18,8 +18,8 @@ const Companies: React.FC = () => {
       <h3 className="h-[30px] xl:h-9 md:text-[24px] md:leading-[36px] leading-[30px] font-bold text-base tracking-tight text-center text-[#0a0d12] dark:text-[#fdfdfd]">
         Trusted by Global Innovators & Leading Brands
       </h3>
-      <div className="z-50 absolute left-0  bottom-0 w-[45.55px] md:w-[120px]  xl:w-[260px] h-4/5 xl:h-[200px] bg-gradient-to-r from-white dark:from-black from-50% to-white/0 dark:to-black/0"></div>
-      <div className="z-50 absolute right-0  bottom-0  w-[45.55px] md:w-[120px] xl:w-[260px] h-4/5 xl:h-[200px] bg-gradient-to-l from-white dark:from-black from-50% to-white/0 dark:to-black/0"></div>
+      <div className="z-48 absolute left-0  bottom-0 w-[45.55px] md:w-[120px]  xl:w-[260px] h-4/5 xl:h-[200px] bg-gradient-to-r from-white dark:from-black from-50% to-white/0 dark:to-black/0"></div>
+      <div className="z-48 absolute right-0  bottom-0  w-[45.55px] md:w-[120px] xl:w-[260px] h-4/5 xl:h-[200px] bg-gradient-to-l from-white dark:from-black from-50% to-white/0 dark:to-black/0"></div>
       <div className="h-32 xl:h-[200px] overflow-x-scroll no-scrollbar flex justify-center items-center relative">
         <div className="flex gap-12 py-10 items-center justify-center absolute xl:top-9 left-[492px] md:left-[754px] xl:left-[640px]">
           {companies.map((company) => (

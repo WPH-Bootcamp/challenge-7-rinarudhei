@@ -5,7 +5,7 @@ type LayoutMain = {
 };
 const LayoutMain: React.FC<LayoutMain> = ({ children }) => {
   return (
-    <main className="absolute flex flex-col top-[843px] md:top-[452px] xl:top-[747px]">
+    <main className="flex flex-col mt-[843px] md:mt-[452px] xl:mt-[747px]">
       {children}
     </main>
   );

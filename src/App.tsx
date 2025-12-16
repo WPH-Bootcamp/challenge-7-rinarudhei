@@ -4,6 +4,8 @@ import Hero from "./components/container/HeroSection";
 import Layout from "./components/container/Layout";
 import LayoutMain from "./components/container/LayoutMain";
 import Nav from "./components/container/Nav";
+import Process from "./components/container/ProcessSection";
+import Services from "./components/container/ServicesSection";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <LayoutMain>
         <Companies></Companies>
         <Awards></Awards>
+        <Process></Process>
+        <Services></Services>
       </LayoutMain>
     </Layout>
   );
