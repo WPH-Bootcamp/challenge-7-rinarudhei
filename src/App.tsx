@@ -8,6 +8,7 @@ import Nav from "./components/container/Nav";
 import Portofolio from "./components/container/Portofolio";
 import Process from "./components/container/ProcessSection";
 import Services from "./components/container/ServicesSection";
+import Testimonials from "./components/container/Testimonials";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Services></Services>
         <Industries></Industries>
         <Portofolio></Portofolio>
+        <Testimonials></Testimonials>
       </LayoutMain>
     </Layout>
   );

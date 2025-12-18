@@ -25,7 +25,10 @@ const Portofolio: React.FC = () => {
     },
   ];
   return (
-    <section className="flex flex-col py-10 xl:py-20 px-4 xl:px-[140px] gap-6 xl:gap-16">
+    <section
+      id="projects"
+      className="flex flex-col py-10 xl:py-20 px-4 xl:px-[140px] gap-6 xl:gap-16"
+    >
       <header className="flex flex-col gap-[11px]">
         <h2 className="w-[361px] md:w-full xl:w-[1160px] h-[76px] md:h-fit xl:h-[56px] font-bold text-[28px] leading-[38px] xl:text-[40px] xl:leading-[56px] tracking-tight text-center text-[#0a0d12] dark:text-[#fdfdfd]">
           From Vision to Launch! Projects We're Proud Of

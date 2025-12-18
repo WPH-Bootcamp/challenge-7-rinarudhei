@@ -3,11 +3,11 @@ import Button from "../../ui/Button";
 import MenuButton from "../../ui/MenuButton";
 
 const Nav: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const navItems = [
     { id: 1, label: "About", href: "#hero" },
-    { id: 2, label: "Service", href: "#service" },
+    { id: 2, label: "Service", href: "#services" },
     { id: 3, label: "Projects", href: "#projects" },
     { id: 4, label: "Testimonials", href: "#testimonials" },
     { id: 5, label: "FAQ", href: "#faq" },

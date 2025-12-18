@@ -58,7 +58,10 @@ const Services: React.FC = () => {
     },
   ];
   return (
-    <section className="flex flex-col py-10 px-4 gap-10 md:py-20 md:px-[140px] md:gap-16">
+    <section
+      id="services"
+      className="flex flex-col py-10 px-4 gap-10 md:py-20 md:px-[140px] md:gap-16"
+    >
       <header className="flex flex-col gap-[11px] h-fit">
         <h2 className="w-[361px] md:w-full xl:w-[1160px] h-[76px] xl:h-14 font-semibold xl:font-bold text-[28px] leading-[38px] xl:text-[40px] xl:leading-[56px] text-center text-[#0a0d12] dark:text-[#fdfdfd]">
           Smart IT Solutions That Grow With You

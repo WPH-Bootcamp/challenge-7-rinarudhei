@@ -7,14 +7,14 @@ type ProcessAccordion = {
 };
 
 const ProcessAccordion: React.FC<ProcessAccordion> = ({ id, title, text }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleShowText = () => {
     setIsOpen(!isOpen);
   };
   return (
     <div
-      className={`flex ${id % 2 === 1 && "md:flex-row-reverse"}  md:justify-end h-[94px] xl:h-[116px] gap-3 xl:gap-6 items-center`}
+      className={`flex ${id % 2 === 1 && "md:flex-row-reverse"} md:justify-end h-[94px] xl:h-[116px] gap-3 xl:gap-6 items-center`}
     >
       {/* <!-- CIRCLE NUMBER --> */}
       <div className="w-10 h-10 xl:w-12 xl:h-12 rounded-[83.33px] xl:rounded-[100px] p-[6.67px] xl:p-2 gap-[6.67px] xl:gap-2 bg-[#ff623e]">
@@ -39,6 +39,7 @@ const ProcessAccordion: React.FC<ProcessAccordion> = ({ id, title, text }) => {
         </div>
         {isOpen ? (
           <svg
+            className="cursor-pointer"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -56,6 +57,7 @@ const ProcessAccordion: React.FC<ProcessAccordion> = ({ id, title, text }) => {
           </svg>
         ) : (
           <svg
+            className="cursor-pointer"
             width="24"
             height="24"
             viewBox="0 0 24 24"

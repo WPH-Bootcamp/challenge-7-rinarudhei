@@ -28,7 +28,7 @@ const sectors: Sector[] = [
 ];
 
 const Industries: React.FC = () => {
-  const [activeSector, setActiveSector] = useState(sectors[0]);
+  const [activeSector, setActiveSector] = useState<Sector>(sectors[0]);
 
   function onClick(id: number) {
     const selectedSector = sectors.find((sector) => sector.id === id);
@@ -50,7 +50,11 @@ const Industries: React.FC = () => {
         {/* <!-- INDUSTRY LIST --> */}
         <ul className="flex flex-col gap-3 md:gap-6">
           {sectors.map((sector) => (
-            <li key={sector.id} onClick={() => onClick(sector.id)}>
+            <li
+              key={sector.id}
+              className="cursor-pointer"
+              onClick={() => onClick(sector.id)}
+            >
               <div className="flex gap-[6px] md:gap-2 justify-start">
                 <div
                   className={`w-1 h-6 md:h-8 rounded-[100px] ${sector.sectorName === activeSector.sectorName ? "bg-[#ff623e]" : "bg-[#aaaaaa] dark:bg-[#535862]"}`}
