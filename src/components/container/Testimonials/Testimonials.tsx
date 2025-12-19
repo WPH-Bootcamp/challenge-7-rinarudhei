@@ -52,7 +52,7 @@ const Testimonials: React.FC = () => {
   return (
     <section
       id="testimonials"
-      className="xl:relative flex flex-col py-10 gap-12 xl:py-20 xl:gap-20 xl:w-[1440px] xl:h-full"
+      className="relative h-[583px] flex flex-col py-10 gap-12 xl:py-20 xl:gap-20 xl:w-[1440px] xl:h-full"
     >
       <header className="flex flex-col gap-[11px]">
         <h2 className="h-[76px] xl:h-[56px] text-[28px] leading-[38px] xl:text-[40px] xl:leading-[56px] font-bold tracking-tight text-center text-[#0a0d12] dark:text-[#fdfdfd]">
@@ -239,7 +239,7 @@ const Testimonials: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="absolute flex gap-[6px] -bottom-[22px] right-[178px] md:right-[364px] xl:bottom-[35px] xl:right-[690px]">
+      <div className="absolute flex gap-[6px] bottom-[34px] right-[178px] md:right-[364px] xl:bottom-[35px] xl:right-[690px]">
         {testimonials.map((testimony, i) => (
           <div
             key={i}

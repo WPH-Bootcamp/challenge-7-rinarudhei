@@ -1,5 +1,5 @@
 import React from "react";
-import ProcessAccordion from "../../ui/MenuButton/ProcessAccordion";
+import ProcessAccordion from "../../ui/ProcessAccordion";
 
 const Process: React.FC = () => {
   const accordions = [

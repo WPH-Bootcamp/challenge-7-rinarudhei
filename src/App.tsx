@@ -1,5 +1,6 @@
 import Awards from "./components/container/AwardsSection";
 import Companies from "./components/container/CompaniesSection";
+import Faq from "./components/container/FaqSection";
 import Hero from "./components/container/HeroSection";
 import Industries from "./components/container/IndustriesSection";
 import Layout from "./components/container/Layout";
@@ -23,6 +24,7 @@ function App() {
         <Industries></Industries>
         <Portofolio></Portofolio>
         <Testimonials></Testimonials>
+        <Faq></Faq>
       </LayoutMain>
     </Layout>
   );
