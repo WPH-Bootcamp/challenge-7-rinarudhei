@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <button type="button" className={`${className}`} {...props}>
+    <button type="button" className={`cursor-pointer ${className}`} {...props}>
       {children}
     </button>
   );
