@@ -1,5 +1,6 @@
 import React from "react";
 import FaqAccordion from "../../ui/FaqAccordion";
+import Button from "../../ui/Button";
 
 type FaqType = {
   id: number;
@@ -39,7 +40,10 @@ const Faq: React.FC = () => {
     },
   ];
   return (
-    <section className="flex flex-col py-10 px-4 gap-6 md:py-16 xl:py-20 md:px-28 xl:px-[140px] md:gap-8 xl:gap-12">
+    <section
+      id="faq"
+      className="flex flex-col py-10 px-4 gap-6 md:py-16 xl:py-20 md:px-28 xl:px-[140px] md:gap-8 xl:gap-12"
+    >
       <header className="flex flex-col md:flex-row  xl:w-[1200px] gap-4 md:justify-between md:items-center overflow-visible">
         <h2 className="w-[331px] h-[38px] md:h-fit font-bold text-[28px] md:text-[32px] leading-[38px] xl:text-[40px] md:leading-[56px] tracking-tight text-[#0a0d12] dark:text-[#fdfdfd] text-wrap">
           Need Help? Start Here
@@ -54,20 +58,17 @@ const Faq: React.FC = () => {
       <div className="flex flex-col xl:flex-row gap-6 md:gap-[73px]">
         <div className="flex flex-col gap-7">
           {faqs.map((faq) => (
-            <>
-              <FaqAccordion
-                id={faq.id}
-                question={faq.question}
-                answer={faq.answer}
-              ></FaqAccordion>
-              <div className="w-[361px] md:w-[544px] xl:w-[798px] h-0 border border-[#dfdfdf] dark:border-[#252b37]"></div>
-            </>
+            <FaqAccordion
+              key={faq.id}
+              question={faq.question}
+              answer={faq.answer}
+            ></FaqAccordion>
           ))}
         </div>
 
         <div className="flex flex-col rounded-2xl md:[483px]  xl:h-[453px] md:rounded-3xl p-5 md:p-[6] gap-4 md:gap-6 bg-[#cc4e32]">
           <div className="flex flex-col gap-1">
-            <h2 className="w-[321px] md:w-full xl:w-[281px] xl:h-[88px] h-[38px] font-bold text-[28px] leading-[38px] md:text-[36px] md:leading-[44px] tracking-tight text-white">
+            <h2 className="w-[321px] md:w-full xl:w-[281px] xl:h-[88px] h-[38px] font-bold text-[28px] leading-[38px] md:text-[32px] xl:text-[36px] md:leading-[44px] tracking-tight text-white">
               Let's talk it through
             </h2>
             <p className="w-[321px] md:w-full xl:w-[281px] xl:h-16 h-[38px] font-semibold text-sm md:text-lg md:leading-8 leading-7 text-white">
@@ -81,14 +82,14 @@ const Faq: React.FC = () => {
               alt="consultant team meeting image"
             />
           </div>
-          <button
+          <Button
             aria-label="Consultation button"
             className="h-11 md:h-12 rounded-full p-2 gap-1 bg-black shadow-[4px_4px_4px_0px_rgba(255,255,255,0.25)_inset] dark:bg-white dark:shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)_inset]"
           >
             <div className="h-[30px] font-bold text-base leading-[30px] tracking-tight text-white dark:text-black">
               Free Consultation
             </div>
-          </button>
+          </Button>
         </div>
       </div>
     </section>

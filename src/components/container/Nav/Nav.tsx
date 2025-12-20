@@ -48,7 +48,7 @@ const Nav: React.FC = () => {
       </nav>
 
       <Button
-        className="hidden md:flex md:w-[132px] xl:w-[197px] md:h-8 xl:h-11 rounded-full md:p-1 xl:p-2 gap-1  items-center"
+        className="hidden bt-primary md:flex md:w-[132px] xl:w-[197px] md:h-8 xl:h-11 rounded-full md:p-1 xl:p-2 gap-1  items-center"
         aria-label="Let's Talk - Main CTA on nav section"
       >
         <p className="font-bold md:text-xs xl:text-sm xl:leading-7 text-white text-center">
@@ -74,7 +74,7 @@ const Nav: React.FC = () => {
               </li>
             ))}
             <Button
-              className=" rounded-full gap-1 items-center h-11"
+              className="bt-primary rounded-full gap-1 items-center h-11"
               aria-label="Let's Talk - Main CTA on nav section"
             >
               <p className="font-bold md:text-xs xl:text-sm xl:leading-7 text-white text-center">

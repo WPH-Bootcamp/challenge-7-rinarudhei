@@ -55,7 +55,7 @@ const Testimonials: React.FC = () => {
       className="relative h-[583px] flex flex-col py-10 gap-12 xl:py-20 xl:gap-20 xl:w-[1440px] xl:h-full"
     >
       <header className="flex flex-col gap-[11px]">
-        <h2 className="h-[76px] xl:h-[56px] text-[28px] leading-[38px] xl:text-[40px] xl:leading-[56px] font-bold tracking-tight text-center text-[#0a0d12] dark:text-[#fdfdfd]">
+        <h2 className="h-[76px] md:h-fit xl:h-[56px] text-[28px] leading-[38px] xl:text-[40px] xl:leading-[56px] font-bold tracking-tight text-center text-[#0a0d12] dark:text-[#fdfdfd]">
           What Partners Say About Working With Us
         </h2>
         <p className="h-7 xl:h-8 font-medium text-sm xl:text-lg xl:leading-[32px] leading-7 text-center text-[#717680] dark:text-[#a4a7ae]">

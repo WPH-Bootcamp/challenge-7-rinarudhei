@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <button type="button" className={`bt-primary ${className}`} {...props}>
+    <button type="button" className={`${className}`} {...props}>
       {children}
     </button>
   );
