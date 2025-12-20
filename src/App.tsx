@@ -2,6 +2,7 @@ import Awards from "./components/container/AwardsSection";
 import Companies from "./components/container/CompaniesSection";
 import Contact from "./components/container/Contact";
 import Faq from "./components/container/FaqSection";
+import Footer from "./components/container/Footer";
 import Hero from "./components/container/HeroSection";
 import Industries from "./components/container/IndustriesSection";
 import Layout from "./components/container/Layout";
@@ -27,6 +28,7 @@ function App() {
         <Testimonials></Testimonials>
         <Faq></Faq>
         <Contact></Contact>
+        <Footer></Footer>
       </LayoutMain>
     </Layout>
   );
