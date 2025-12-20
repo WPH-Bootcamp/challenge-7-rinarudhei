@@ -2,6 +2,7 @@ import React, { useState, type ChangeEvent } from "react";
 import Button from "../Button";
 import InputField from "../InputField";
 import Checkbox from "../Checkbox/Checkbox";
+import Modal from "../../container/Popup";
 
 type Form = {
   name: string;
@@ -17,6 +18,7 @@ type Service = {
 };
 
 const Form: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState<Form>({
     name: "",
     email: "",
@@ -74,7 +76,10 @@ const Form: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form data:", formData);
+    setIsModalOpen(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-10">
       <div className="flex flex-col gap-5">
@@ -127,6 +132,7 @@ const Form: React.FC = () => {
           Send
         </div>
       </Button>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </form>
   );
 };
